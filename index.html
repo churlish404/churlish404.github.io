@@ -8,47 +8,48 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-   <header>
-        <p> 👋 Hey! I'm Luca G</p>
-        <h1> A Junior Software Developer based in the UK</h1> 
+   <header class="header">
+        <p class="header__greeting"> 👋 Hey! I'm Luca G</p>
+        <h1 class="header__title"> A Junior Software Developer based in<br> the UK.</h1> 
    </header> 
    <main>
         <section class="aboutMe">
-            <img src="#" alt="self-portrait">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis soluta, officia, possimus iusto nisi veniam odit eum aspernatur, dolores illum quis magni? Nostrum iusto repellat beatae quod voluptatibus, inventore est!</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis libero nulla, accusamus dolores dolor cum maiores ipsum voluptatum. Officia inventore facilis cupiditate a quaerat esse iusto. Maiores minima quos impedit.</p>
+            <h2>About Me</h2>
+            <img class="aboutMe__img" src="./images/c6470738-f51f-422b-bb9b-60bfccafaad1.JPG" alt="self-portrait">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at veritatis alias recusandae dolore soluta, ab sed facilis nihil error labore deleniti quia vitae tempore officia distinctio, nulla rem ducimus? Provident, sint perspiciatis. Aut ad perspiciatis dolor quam consectetur rerum, recusandae laboriosam quae quos nihil, dolore eligendi, consequuntur ratione facilis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at veritatis alias recusandae dolore soluta, ab sed facilis nihil error labore deleniti quia vitae tempore officia distinctio, nulla rem ducimus? Provident, sint perspiciatis. Aut ad perspiciatis dolor quam consectetur rerum, recusandae laboriosam quae quos nihil, dolore eligendi, consequuntur ratione facilis!</p>
         </section>
-        <section class="technicalSkills">
-            <h2> Technical Skills </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure illum vitae. </p>
+        <section class="technical-skills">
+            <h2 class="technical-skills__header"> Technical Skills </h2>
+            <p class="technical-skills__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta quae dolorem!</p>
 <!-- grid container -->
-            <div id="technicalSkills__div">
+            <div class="technical-skills__icons">
 <!-- icons wrapped in divs-->
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/SpringBoot_icon.svg" alt="spring icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/java.svg" alt="java icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/react.svg" alt="react icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/bem.svg" alt="BEM icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/scss.svg" alt="SCSS icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/javascript.svg" alt="javascript icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/css.svg" alt="CSS3 icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/html.svg" alt="HTML5 icon">
                 </div>
-                <div class="technicalSkills__image">
+                <div class="technical-skills__image">
                     <img src="./images/git.svg" alt="git icon">
                 </div>
             </div>   
@@ -58,7 +59,7 @@
             <div class="projectCard">
                 <img src="./images/project.svg" alt="project 1 thumbnail">
                 <h4>REACT</h4>
-                <h2>Client Project</h2>
+                <h3>Client Project</h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, amet! Odio maxime delectus vero dolorem ipsam nam, a mollitia perferendis?</p>
                 <div class="buttons">
                     <!-- used escape codes to write </> on buttons-->
@@ -69,7 +70,7 @@
             <div class="projectCard">
                 <img src="./images/project.svg" alt="project 1 thumbnail">
                 <h4>REACT</h4>
-                <h2>Client Project</h2>
+                <h3>Client Project</h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, amet! Odio maxime delectus vero dolorem ipsam nam, a mollitia perferendis?</p>
                 <div class="buttons">
                     <!-- used escape codes to write </> on buttons-->
@@ -80,7 +81,7 @@
             <div class="projectCard">
                 <img src="./images/project.svg" alt="project 1 thumbnail">
                 <h4>REACT</h4>
-                <h2>Client Project</h2>
+                <h3>Client Project</h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, amet! Odio maxime delectus vero dolorem ipsam nam, a mollitia perferendis?</p>
                 <div class="buttons">
                     <!-- used escape codes to write </> on buttons-->
@@ -91,11 +92,11 @@
         </section>
    </main>
    <footer>
-        <a href=""><img src="./images/footericon1.svg" alt="github icon link"></a>
-        <a href=""><img src="./images/footericon2.svg" alt="github icon link"></a>
-        <a href=""><img src="./images/footericon3.svg" alt="online CV"></a>
+    <a href=""><img src="./images/footericon1.svg" alt="github icon link"></a>
+    <a href=""><img src="./images/footericon2.svg" alt="github icon link"></a>
+    <a href=""><img src="./images/footericon3.svg" alt="online CV"></a>
 
-        <p><a href="mailto:someone@example.com">luca.gilardenghi@yahoo.co.uk</a></p>
+    <p><a href="mailto:someone@example.com">luca.gilardenghi@yahoo.co.uk</a></p>
    </footer>
 </body>
 </html>

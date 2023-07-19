@@ -1,6 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
+
+// color variables 
+
+$color-white: #ffffff;
+$color-black: #030000;
+
+
+body {
+    margin: 2.5rem;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif; 
+    padding: 1rem;
+
+    &__greeting {
+        margin-block: 1rem;
+        font-weight: 500;
+    }
+
+    &__title {
+        width: 75vw;
+        margin: 3rem auto;
+        font-size: 3rem;
+    }
+}
+
+main {
+    h2 {
+        text-align: center;
+    }
+    line-height: 1.75;
+}
+
+.aboutMe {
+    * {
+        margin-bottom: 3rem;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
+
+.technical-skills {
+    margin: 4rem 1rem;
+
+    &__header {
+        font-size: 1.75rem;
+    }
+
+    &__description {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    
+    &__icons {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 17vw;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.projects {
+    font-size: 1.25rem;
+
+
+}
+
+
+
 
