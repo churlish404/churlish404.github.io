@@ -4,9 +4,11 @@
   padding: 0;
   margin: 0;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
-body {
+header,
+main {
   margin: 2.5rem;
 }
 
@@ -31,10 +33,10 @@ main h2 {
   text-align: center;
 }
 
-.aboutMe * {
+.about-me * {
   margin-bottom: 3rem;
 }
-.aboutMe__img {
+.about-me__img {
   max-width: 100%;
 }
 
@@ -55,9 +57,6 @@ main h2 {
   gap: 0.5rem;
 }
 .technical-skills__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 17vw;
 }
 .technical-skills__image img {
@@ -66,4 +65,30 @@ main h2 {
 
 .projects {
   font-size: 1.25rem;
+}
+.projects .project-card__tech-language {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #030000;
+  color: #ffffff;
+  padding: 3.5em;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }/*# sourceMappingURL=main.css.map */

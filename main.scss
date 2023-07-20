@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 // color variables 
@@ -12,8 +13,8 @@
 $color-white: #ffffff;
 $color-black: #030000;
 
-
-body {
+header,
+main {
     margin: 2.5rem;
 }
 
@@ -40,7 +41,7 @@ main {
     line-height: 1.75;
 }
 
-.aboutMe {
+.about-me {
     * {
         margin-bottom: 3rem;
     }
@@ -69,9 +70,6 @@ main {
     }
 
     &__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 17vw;
         img {
             width: 100%;
@@ -81,10 +79,42 @@ main {
 
 .projects {
     font-size: 1.25rem;
-
+    
+    .project-card {
+    
+        &__tech-language {
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+       
+    }
 
 }
 
+footer {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 3.5em;
+    margin-top: 5rem;
+
+
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
 
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
