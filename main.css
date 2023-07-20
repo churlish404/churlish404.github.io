@@ -6,6 +6,14 @@
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
 }
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: none;
+}
 
 header,
 main {
@@ -15,8 +23,10 @@ main {
 .header {
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
+  border: solid red 2px;
 }
 .header__greeting {
+  display: inline-block;
   margin-block: 1rem;
   font-weight: 500;
 }
@@ -113,10 +123,6 @@ footer {
 footer .footer-icons {
   padding: 0.5em;
 }
-footer a {
-  text-decoration: none;
-  color: inherit;
-}
 
 .center {
   display: flex;
@@ -126,6 +132,9 @@ footer a {
 }
 
 @media screen and (min-width: 440px) {
+  .header {
+    padding: 0;
+  }
   .about-me {
     display: flex;
     flex-direction: column;
@@ -139,11 +148,20 @@ footer a {
   }
 }
 @media screen and (min-width: 768px) {
-  .header {
-    margin: 1rem;
+  nav {
+    font-size: 1.25rem;
+    padding: 2em 4em;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .nav-right,
+  nav .nav-links {
+    display: flex;
+    gap: 1rem;
   }
   .header__greeting, .header__title {
     max-width: 50vw;
+    margin: 5rem;
   }
   .about-me {
     flex-direction: row;

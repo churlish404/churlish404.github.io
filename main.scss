@@ -6,6 +6,11 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 // color variables 
@@ -14,6 +19,9 @@ $color-white: #ffffff;
 $color-black: #030000;
 $color-primary: #562e4a;
 
+nav {
+    display: none;
+}
 
 header,
 main {
@@ -23,8 +31,10 @@ main {
 .header {
     font-family: 'Montserrat', sans-serif; 
     padding: 1rem;
+    border: solid red 2px;
 
     &__greeting {
+        display: inline-block;
         margin-block: 1rem;
         font-weight: 500;
     }
@@ -141,11 +151,6 @@ footer {
     .footer-icons {
         padding: 0.5em;
     }
-    
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
 }
 
 .center {
@@ -155,6 +160,10 @@ footer {
     gap: 1rem;
 }
 @media screen and (min-width: 440px) {
+
+    .header {
+        padding: 0;
+    }
     .about-me {
         display: flex;
         flex-direction: column;
@@ -171,13 +180,27 @@ footer {
     }
 }
 @media screen and (min-width: 768px) {
+
+    nav {
+        font-size: 1.25rem;
+        padding: 2em 4em;
+        display: flex;
+        justify-content: space-between;
+        
+// button grouped in "nav-right" to avoid using <button> in a <ul>
+        .nav-right,
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        } 
+    }
     
     .header {
-        margin: 1rem;
         
         &__greeting,
         &__title {
             max-width: 50vw;
+            margin: 5rem;
         }
     }
 
@@ -198,7 +221,5 @@ footer {
             height: 400px;
             max-width: 30vw;
         }
-    }
-    
-    
+    }   
 }
