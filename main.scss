@@ -44,11 +44,17 @@ main {
 }
 
 .about-me {
+    
     * {
         margin-bottom: 3rem;
     }
-    &__img {
+    
+    &__image {
         max-width: 100%;
+    }
+
+    &__title--desktop {
+        display: none;
     }
 }
 
@@ -147,4 +153,52 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+@media screen and (min-width: 440px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    
+        
+        &__image {
+            max-width: 350px;
+            align-self: center;
+        }
+    }
+
+    .technical-skills {
+        margin: 2rem 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    
+    .header {
+        margin: 1rem;
+        
+        &__greeting,
+        &__title {
+            max-width: 50vw;
+        }
+    }
+
+    .about-me {
+        flex-direction: row;
+        gap: 3rem;
+
+        &__title {
+            display: none;
+            
+            &--desktop {
+                display: block;
+            }
+        }
+
+        &__image {
+            min-width: 300px;
+            height: 400px;
+            max-width: 30vw;
+        }
+    }
+    
+    
 }

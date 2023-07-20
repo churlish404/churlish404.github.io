@@ -36,8 +36,11 @@ main h2 {
 .about-me * {
   margin-bottom: 3rem;
 }
-.about-me__img {
+.about-me__image {
   max-width: 100%;
+}
+.about-me__title--desktop {
+  display: none;
 }
 
 .technical-skills {
@@ -120,4 +123,41 @@ footer a {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (min-width: 440px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me__image {
+    max-width: 350px;
+    align-self: center;
+  }
+  .technical-skills {
+    margin: 2rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 1rem;
+  }
+  .header__greeting, .header__title {
+    max-width: 50vw;
+  }
+  .about-me {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .about-me__title {
+    display: none;
+  }
+  .about-me__title--desktop {
+    display: block;
+  }
+  .about-me__image {
+    min-width: 300px;
+    height: 400px;
+    max-width: 30vw;
+  }
 }/*# sourceMappingURL=main.css.map */
