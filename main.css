@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+  outline: solid;
 }
 * a {
   text-decoration: none;
@@ -45,18 +46,20 @@ main h2 {
   text-align: center;
 }
 
-.about-me * {
-  margin-bottom: 3rem;
-}
 .about-me__image {
   max-width: 100%;
+}
+.about-me__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .about-me__title--desktop {
   display: none;
 }
 
 .technical-skills {
-  margin: 4rem 1rem;
+  margin: 4rem auto;
 }
 .technical-skills__header {
   font-size: 1.75rem;
@@ -66,7 +69,8 @@ main h2 {
   text-align: center;
 }
 .technical-skills__icons {
-  margin: 2rem 0;
+  overflow: visible;
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
@@ -137,13 +141,22 @@ footer .footer-icons {
   .about-me {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
   }
   .about-me__image {
     max-width: 350px;
     align-self: center;
   }
   .technical-skills {
-    margin: 2rem 1rem;
+    margin: 4rem auto;
+  }
+  .technical-skills__icons {
+    margin-top: 4rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  .technical-skills__image {
+    max-width: 5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -170,6 +183,7 @@ footer .footer-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     gap: 1rem;
     flex-wrap: wrap;
     overflow: visible;
@@ -178,8 +192,27 @@ footer .footer-icons {
     display: block;
   }
   .about-me {
+    gap: 2rem;
+  }
+  .about-me__text {
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
+  }
+  .technical-skills__icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-me {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .about-me__text {
+    flex-direction: column;
   }
   .about-me__title {
     display: none;
@@ -188,8 +221,11 @@ footer .footer-icons {
     display: block;
   }
   .about-me__image {
-    min-width: 300px;
-    height: 400px;
+    align-self: flex-start;
+    min-width: 400px;
     max-width: 30vw;
+  }
+  .technical-skills__icons {
+    margin: 1rem auto;
   }
 }/*# sourceMappingURL=main.css.map */
