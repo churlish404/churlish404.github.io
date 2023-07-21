@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+button {
+  background-color: $color-white;
+  color: $color-primary;
+  padding: 0.5em 1em;
+  border: $color-primary solid 2px;
+  border-radius: 5px;
+}

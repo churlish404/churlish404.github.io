@@ -1,0 +1,47 @@
+.header {
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+
+  &__greeting {
+    display: inline-block;
+    margin-block: 1rem;
+    font-weight: 500;
+  }
+
+  &__title {
+    width: 75vw;
+    margin: 3rem auto;
+    font-size: 3rem;
+  }
+  // desktop cartoon hidden in mobile
+  &__image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    gap: 3rem;
+
+    &__greeting,
+    &__title {
+      width: 40vw;
+    }
+
+    &__intro {
+      margin-left: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 1rem;
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+
+    &__image {
+      display: block;
+    }
+  }
+}

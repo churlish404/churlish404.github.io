@@ -1,53 +1,11 @@
+@use "./resets";
+@use "./button";
+@use "./header";
+@use "./nav.scss";
+@use "./footer";
+@use "./variables" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600&display=swap");
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  overflow-x: hidden;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-}
-
-// color variables
-
-$color-white: #ffffff;
-$color-black: #030000;
-$color-primary: #562e4a;
-
-nav {
-  display: none;
-}
-
-header,
-main {
-  margin: 2.5rem;
-}
-
-.header {
-  font-family: "Montserrat", sans-serif;
-  padding: 1rem;
-
-  &__greeting {
-    display: inline-block;
-    margin-block: 1rem;
-    font-weight: 500;
-  }
-
-  &__title {
-    width: 75vw;
-    margin: 3rem auto;
-    font-size: 3rem;
-  }
-  // desktop cartoon hidden in mobile
-  &__image {
-    display: none;
-  }
-}
 
 main {
   h2 {
@@ -131,34 +89,6 @@ main {
       display: flex;
       gap: 1rem;
     }
-
-    &__button {
-      background-color: $color-white;
-      color: $color-primary;
-      padding: 0.5em 1em;
-      border: $color-primary solid 2px;
-      border-radius: 5px;
-    }
-  }
-}
-
-footer {
-  background-color: $color-black;
-  color: $color-white;
-  padding: 3.5em;
-  margin-top: 5rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-
-  .footer-icons {
-    padding: 0.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
   }
 }
 
@@ -189,44 +119,6 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
-  nav {
-    font-size: 1.25rem;
-    padding: 2em 4em;
-    display: flex;
-    justify-content: space-between;
-
-    // button grouped in "nav-right" to avoid using <button> in a <ul>
-    .nav-right,
-    .nav-links {
-      display: flex;
-      gap: 1rem;
-    }
-  }
-
-  .header {
-    display: flex;
-    gap: 3rem;
-
-    &__greeting,
-    &__title {
-      width: 40vw;
-    }
-
-    &__intro {
-      margin-left: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 1rem;
-      flex-wrap: wrap;
-      overflow: visible;
-    }
-
-    &__image {
-      display: block;
-    }
-  }
   .about-me {
     gap: 2rem;
 
@@ -283,10 +175,5 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
     }
-  }
-
-  footer {
-    flex-direction: row-reverse;
-    justify-content: space-between;
   }
 }

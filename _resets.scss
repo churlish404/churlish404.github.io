@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+header,
+main {
+  margin: 2.5rem;
+}

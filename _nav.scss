@@ -1,0 +1,36 @@
+// not displaying nav-bar in mobile design
+nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    font-size: 1.25rem;
+    padding: 2em 4em;
+    display: flex;
+    justify-content: space-between;
+
+    // button grouped in "nav-right" to avoid using <button> in a <ul>
+    .nav-right,
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links {
+      gap: 1rem;
+    }
+
+    .nav-right {
+      gap: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    .nav-links {
+      gap: 2rem;
+    }
+    .nav-right {
+      gap: 4rem;
+    }
+  }
+}
