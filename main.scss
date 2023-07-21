@@ -6,7 +6,6 @@
   margin: 0;
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  outline: solid;
 
   a {
     text-decoration: none;
@@ -109,7 +108,7 @@ main {
   }
 
   .project-card {
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 
     &__image {
       max-width: 100%;
@@ -156,15 +155,13 @@ footer {
 
   .footer-icons {
     padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
 @media screen and (min-width: 440px) {
   .about-me {
     display: flex;
@@ -278,5 +275,18 @@ footer {
     &__icons {
       margin: 1rem auto;
     }
+  }
+
+  .projects {
+    .project-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }

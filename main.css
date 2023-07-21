@@ -5,7 +5,6 @@
   margin: 0;
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  outline: solid;
 }
 * a {
   text-decoration: none;
@@ -89,7 +88,7 @@ main h2 {
   margin: 1rem;
 }
 .projects .project-card {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 .projects .project-card__image {
   max-width: 100%;
@@ -128,9 +127,6 @@ footer {
 }
 footer .footer-icons {
   padding: 0.5em;
-}
-
-.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,5 +223,14 @@ footer .footer-icons {
   }
   .technical-skills__icons {
     margin: 1rem auto;
+  }
+  .projects .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=main.css.map */
