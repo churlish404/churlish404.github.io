@@ -1,0 +1,64 @@
+.about-me {
+  &__image {
+    max-width: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title--desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__image {
+      max-width: 350px;
+      align-self: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    gap: 2rem;
+
+    &__text {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me {
+    flex-direction: row;
+    gap: 5rem;
+
+    &__text {
+      flex-direction: column;
+    }
+
+    &__title {
+      display: none;
+
+      &--desktop {
+        display: block;
+      }
+    }
+
+    &__image {
+      align-self: flex-start;
+      min-width: 400px;
+      max-width: 30vw;
+    }
+  }
+}

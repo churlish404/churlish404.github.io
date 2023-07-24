@@ -1,3 +1,4 @@
+@use "./variables" as *;
 // not displaying nav-bar in mobile design
 nav {
   display: none;
@@ -8,6 +9,8 @@ nav {
     padding: 2em 4em;
     display: flex;
     justify-content: space-between;
+    color: $color-white;
+    background-color: $color-black;
 
     // button grouped in "nav-right" to avoid using <button> in a <ul>
     .nav-right,
@@ -17,6 +20,7 @@ nav {
 
     .nav-links {
       gap: 1rem;
+      color: $color-white;
     }
 
     .nav-right {
