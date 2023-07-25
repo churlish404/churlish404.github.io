@@ -1,9 +1,16 @@
 @use "./variables" as *;
 
 button {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: $color-dark;
+  color: $color-white;
   padding: 0.5em 1em;
-  border: $color-white solid 2px;
+  border: $color-accent solid 2px;
   border-radius: 5px;
+  transition: all 500ms;
+}
+
+button:hover {
+  background-color: $color-accent;
+  border: solid $color-dark 2px;
+  color: $color-dark;
 }

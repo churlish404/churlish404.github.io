@@ -1,5 +1,7 @@
+@use "./variables" as *;
 .technical-skills {
   margin: 4rem auto;
+  background-color: $color-white;
 
   &__header {
     font-size: 1.75rem;
@@ -22,6 +24,7 @@
     width: 17vw;
     img {
       width: 100%;
+      aspect-ratio: 1/1;
     }
   }
 }

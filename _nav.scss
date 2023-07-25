@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     color: $color-white;
-    background-color: $color-black;
+    background-color: $color-background;
 
     // button grouped in "nav-right" to avoid using <button> in a <ul>
     .nav-right,

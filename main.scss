@@ -7,3 +7,7 @@
 @use "./about-me";
 @use "./technical-skills";
 @use "./projects";
+
+body {
+  background-color: $color-background--light;
+}

@@ -24,11 +24,18 @@ main h2 {
 }
 
 button {
-  background-color: #ffffff;
-  color: #030000;
+  background-color: #2d2d2a;
+  color: #ffffff;
   padding: 0.5em 1em;
-  border: #ffffff solid 2px;
+  border: #ff934f solid 2px;
   border-radius: 5px;
+  transition: all 500ms;
+}
+
+button:hover {
+  background-color: #ff934f;
+  border: solid #2d2d2a 2px;
+  color: #2d2d2a;
 }
 
 .header {
@@ -82,7 +89,7 @@ nav {
     display: flex;
     justify-content: space-between;
     color: #ffffff;
-    background-color: #030000;
+    background-color: #848fa5;
   }
   nav .nav-right,
   nav .nav-links {
@@ -182,6 +189,7 @@ footer .footer-icons {
 }
 .technical-skills {
   margin: 4rem auto;
+  background-color: #ffffff;
 }
 .technical-skills__header {
   font-size: 1.75rem;
@@ -202,6 +210,7 @@ footer .footer-icons {
 }
 .technical-skills__image img {
   width: 100%;
+  aspect-ratio: 1/1;
 }
 
 @media screen and (min-width: 440px) {
@@ -264,4 +273,7 @@ footer .footer-icons {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
+}
+body {
+  background-color: #e7dfc6;
 }/*# sourceMappingURL=main.css.map */
