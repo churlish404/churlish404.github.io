@@ -14,3 +14,8 @@ button:hover {
   border: solid $color-dark 2px;
   color: $color-dark;
 }
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}

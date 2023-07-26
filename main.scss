@@ -5,9 +5,6 @@
 @use "./nav.scss";
 @use "./footer";
 @use "./about-me";
+@use "./main";
 @use "./technical-skills";
 @use "./projects";
-
-body {
-  background-color: $color-background--light;
-}
