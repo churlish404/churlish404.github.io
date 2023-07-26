@@ -51,6 +51,11 @@ button:hover {
   width: 75vw;
   margin: 3rem auto;
   font-size: 3rem;
+  font-size: 3rem;
+  background-image: linear-gradient(to left, #ff934f, #2d2d2a);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .header__image {
   display: none;

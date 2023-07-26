@@ -13,6 +13,10 @@
     width: 75vw;
     margin: 3rem auto;
     font-size: 3rem;
+    font-size: 3rem;
+    background-image: linear-gradient(to left, $color-accent, $color-dark);
+    color: transparent;
+    background-clip: text;
   }
   // desktop cartoon hidden in mobile
   &__image {
