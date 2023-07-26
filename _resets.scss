@@ -1,3 +1,4 @@
+@use "./variables" as *;
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,14 +12,19 @@
   }
 }
 
+body {
+  background-color: $color-background--light;
+}
+
 header,
 main {
   margin: 2.5rem;
 }
 
 main {
+  line-height: 1.75;
+
   h2 {
     text-align: center;
   }
-  line-height: 1.75;
 }

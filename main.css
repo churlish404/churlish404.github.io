@@ -11,6 +11,10 @@
   color: inherit;
 }
 
+body {
+  background-color: #e7dfc6;
+}
+
 header,
 main {
   margin: 2.5rem;
@@ -70,6 +74,9 @@ button:hover {
   .header {
     display: flex;
     gap: 3rem;
+  }
+  .header__greeting {
+    font-size: 1.5rem;
   }
   .header__greeting, .header__title {
     width: 40vw;
@@ -201,6 +208,26 @@ footer .footer-icons {
     max-width: 30vw;
   }
 }
+.dark {
+  color: white;
+  background-color: #2d2d2a;
+}
+.dark nav {
+  background-color: #e7dfc6;
+  color: #2d2d2a;
+}
+.dark nav a {
+  color: #2d2d2a;
+}
+.dark header h1 {
+  color: white;
+}
+
+.light {
+  color: #2d2d2a;
+  background-color: #e7dfc6;
+}
+
 .technical-skills {
   margin: 3rem auto;
   padding: 1em;
@@ -296,7 +323,4 @@ footer .footer-icons {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
-}
-body {
-  background-color: #e7dfc6;
 }/*# sourceMappingURL=main.css.map */

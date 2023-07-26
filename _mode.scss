@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+.dark {
+  color: white;
+  background-color: $color-dark;
+  nav {
+    background-color: $color-background--light;
+    color: $color-dark;
+    a {
+      color: $color-dark;
+    }
+  }
+  header {
+    h1 {
+      color: white;
+    }
+  }
+}
+
+.light {
+  color: $color-dark;
+  background-color: $color-background--light;
+}

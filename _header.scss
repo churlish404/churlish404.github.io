@@ -29,6 +29,9 @@
     display: flex;
     gap: 3rem;
 
+    &__greeting {
+      font-size: 1.5rem;
+    }
     &__greeting,
     &__title {
       width: 40vw;
