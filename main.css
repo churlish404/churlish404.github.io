@@ -299,7 +299,7 @@ footer .footer-icons {
 }
 .projects .project-card__image {
   max-width: 100%;
-  width: 80%;
+  width: 100%;
   box-shadow: 5px 5px 20px #2d2d2a, inset -5px -5px 20px #2d2d2a;
 }
 .projects .project-card__tech-language {
@@ -317,9 +317,18 @@ footer .footer-icons {
   gap: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .project-card__image {
+    max-width: 80%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .projects .project-container {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
