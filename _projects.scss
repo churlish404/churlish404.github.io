@@ -1,3 +1,4 @@
+@use "./variables" as *;
 .projects {
   font-size: 1.25rem;
 
@@ -10,6 +11,8 @@
 
     &__image {
       max-width: 100%;
+      width: 80%;
+      box-shadow: 5px 5px 20px $color-dark, inset -5px -5px 20px $color-dark;
     }
 
     &__tech-language {

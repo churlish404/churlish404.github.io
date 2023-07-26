@@ -256,6 +256,8 @@ footer .footer-icons {
 }
 .projects .project-card__image {
   max-width: 100%;
+  width: 80%;
+  box-shadow: 5px 5px 20px #2d2d2a, inset -5px -5px 20px #2d2d2a;
 }
 .projects .project-card__tech-language {
   font-size: 1rem;
