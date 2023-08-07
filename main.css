@@ -49,7 +49,6 @@ button:hover {
 
 .header {
   font-family: "Montserrat", sans-serif;
-  padding: 1rem;
 }
 .header__greeting {
   display: inline-block;
@@ -57,29 +56,25 @@ button:hover {
   font-weight: 500;
 }
 .header__title {
-  width: 75vw;
   margin: 3rem auto;
-  font-size: 3rem;
   font-size: 3rem;
   background-image: linear-gradient(to left, #ff934f, #2d2d2a);
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 .header__image {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    display: flex;
-    gap: 3rem;
-  }
   .header__greeting {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  .header__greeting, .header__title {
-    width: 40vw;
+  .header__title {
+    font-size: 6rem;
   }
   .header__intro {
     margin-left: 3rem;
@@ -87,12 +82,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    gap: 1rem;
-    flex-wrap: wrap;
     overflow: visible;
-  }
-  .header__image {
-    display: block;
   }
 }
 nav {
@@ -235,10 +225,6 @@ footer .footer-icons {
 }
 .technical-skills__header {
   font-size: 1.75rem;
-}
-.technical-skills__description {
-  margin-top: 1.5rem;
-  text-align: center;
 }
 .technical-skills__icons {
   margin-top: 2rem;

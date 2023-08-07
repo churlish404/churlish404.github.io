@@ -1,7 +1,6 @@
 @use "./variables" as *;
 .header {
   font-family: "Montserrat", sans-serif;
-  padding: 1rem;
 
   &__greeting {
     display: inline-block;
@@ -10,13 +9,13 @@
   }
 
   &__title {
-    width: 75vw;
     margin: 3rem auto;
-    font-size: 3rem;
     font-size: 3rem;
     background-image: linear-gradient(to left, $color-accent, $color-dark);
     color: transparent;
     background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
   }
   // desktop cartoon hidden in mobile
   &__image {
@@ -26,15 +25,12 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    display: flex;
-    gap: 3rem;
-
     &__greeting {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
-    &__greeting,
+
     &__title {
-      width: 40vw;
+      font-size: 6rem;
     }
 
     &__intro {
@@ -43,13 +39,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
-      gap: 1rem;
-      flex-wrap: wrap;
       overflow: visible;
-    }
-
-    &__image {
-      display: block;
     }
   }
 }

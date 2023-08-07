@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body class="light">
-    <nav>
-        <a href="#">
+    <nav id="top">
+        <a href="#top">
             <div class="desktop-Home">Luca G </div>
         </a>
         <div class="nav-right">
             <ul class="nav-links">
                 <li><a href="#home">Home</a> </li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about-me">About</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
             <div class="buttons">
@@ -25,25 +25,21 @@
         </div>
     </nav>
    <header class="header">
-        <div class="header__intro">
-            <p class="header__greeting"> Ciao! I'm Luca 🇮🇹🇬🇧</p>
+            <p class="header__greeting"> Ciao! Mi chiamo Luca </p>
             <h1 class="header__title"> A Junior Software Developer <br> based in sunny Birmingham..</h1>
-        </div> 
-        <img class="header__image" src="./images/header.svg" alt="developer sat down with laptop">
    </header> 
    <main>
-        <section class="about-me">
+        <section id="about-me" class="about-me">
             <h2 class="about-me__title">About Me</h2>
             <img class="about-me__image" src="images/portfolio-pic.jpg" alt="self-portrait">
             <div class="about-me__text">
                 <h2 class="about-me__title--desktop"> About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at veritatis alias recusandae dolore soluta, ab sed facilis nihil error labore deleniti quia vitae tempore officia distinctio, nulla rem ducimus? Provident, sint perspiciatis. Aut ad perspiciatis dolor quam consectetur rerum, recusandae laboriosam quae quos nihil, dolore eligendi, consequuntur ratione facilis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at veritatis alias recusandae dolore soluta, ab sed facilis nihil error labore deleniti quia vitae tempore officia distinctio, nulla rem ducimus? Provident, sint perspiciatis. Aut ad perspiciatis dolor quam consectetur rerum, recusandae laboriosam quae quos nihil, dolore eligendi, consequuntur ratione facilis!</p>
+                <p>My interest in programming sparked while learning C in the summer following university. Initially, it felt like an alien language, but I became quietly inspired, and curiosity has drawn me back to programming again and again. Seeking a rewarding career that blends creativity and logic, I enrolled in the _nology full stack course. </p>
+                <p>Throughout the course, I have sharpened my technical skills and problem-solving ability whilst revelling working in an Agile team. Furthermore, my science background taught me to conduct research and think critically which will be invaluable skills in my new career as a developer.</p>
             </div>
         </section>
         <section class="technical-skills">
             <h2 class="technical-skills__header"> Technical Skills </h2>
-            <p class="technical-skills__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis soluta quae dolorem!</p>
 <!-- grid container -->
             <div class="technical-skills__icons">
 <!-- icons wrapped in divs-->
@@ -76,14 +72,14 @@
                 </div>
             </div>   
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2> My Projects</h2>
             <div class="project-container">
                 <div class="project-card">
-                    <img class="project-card__image" src="./images/project.svg" alt="project 1 thumbnail">
-                    <p class="project-card__tech-language">REACT</p>
-                    <h3 class="project-card__title">Client Project</h3>
-                    <p class="project-card__description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, amet! Odio maxime delectus vero dolorem ipsam nam, a mollitia perferendis?</p>
+                    <img class="project-card__image" src="./images/calculator thumbnail.png" alt="project 1 thumbnail">
+                    <p class="project-card__tech-language">TypeScript, Vite & Github Pages</p>
+                    <h3 class="project-card__title">Calculator</h3>
+                    <p class="project-card__description"> A functional, sequential calculator   </p>
                     <div class="buttons">
                         <!-- used escape codes to write </> on buttons-->
                         <button class="project-card__button project-card___button--code"> Code &#60/&#62 </button>
